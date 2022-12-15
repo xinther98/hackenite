@@ -1,0 +1,21 @@
+html{
+   scroll-behavior: smooth;
+}
+.navbt{
+    color: black;
+ }
+  .navigation{
+    position:relative;
+    left: 620px;
+ }
+ .searchbar{
+    position: relative;
+    left: 200px;
+ } 
+ .khatola{
+    color: black;
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ 

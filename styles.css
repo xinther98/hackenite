@@ -1,0 +1,29 @@
+html{
+   scroll-behavior: smooth;
+}
+.navbt{
+    color: #ffd700;
+ }
+  .navigation{
+    position:relative;
+    left: 900px;
+    top: 0px;
+ }
+ .searchbar{
+    position: relative;
+    left: 300px;
+    top:30px
+ } 
+ .khatola{
+    color: black;
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ 
+.info{
+    margin-top: 200px;
+}
+body{
+    background-image: url("images/flight4.jpeg");
+}

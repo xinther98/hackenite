@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment Gateway</title>
+</head>
+<body onkeypress="alert('Payment Processing... \nPlease wait. Do not refresh.\nClick on make payment again to go to home page')">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-11">
+                <div class="card card0 rounded-0">
+                    <div class="row">
+                        <div class="col-md-5 d-md-block d-none p-0 box">
+                            <div class="card rounded-0 border-0 card1" id="bill">
+                                <h3 id="heading1">Payment Summary</h3>
+                                <div class="row">
+                                    <div class="col-lg-7 col-8 mt-4 line pl-4">
+                                        <h2 class="bill-head">Base Fare</h2> <small class="bill-date">₹4345</small>
+                                    </div>
+                                    <div class="col-lg-5 col-4 mt-4">
+                                        <h2 class="bill-head px-xl-5 px-lg-4">BLR</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-8 mt-4 line pl-4">
+                                        <h2 class="bill-head">Fee & surcharges</h2> <small class="bill-date">₹1280</small>
+                                    </div>
+                                    <div class="col-lg-5 col-4 mt-4">
+                                        <h2 class="bill-head px-xl-5 px-lg-4">To</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-8 mt-4 line pl-4">
+                                        <h2 class="bill-head">Convenience fee</h2> <small class="bill-date">₹400</small><br> <small class="bill-date"></small>
+                                    </div>
+                                    <div class="col-lg-5 col-4 mt-4">
+                                        <h2 class="bill-head px-xl-5 px-lg-4">BOM</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-8 mt-4 line pl-4">
+                                        <h2 class="bill-head">Discount</h2> <small class="bill-date">₹300</small>
+                                    </div>
+                                    <div class="col-lg-5 col-4 mt-4">
+                                        <h2 class="bill-head px-xl-5 px-lg-6">22/05/22</h2>
+                                        <h2 class="bill-head px-xl-5 px-lg-6">5:45-7:25</h2>
+                                    </div>
+                                </div>s
+                                <div class="row">
+                                    <div class="col-md-12 red-bg">
+                                        <p class="bill-date" id="total-label">Total Price</p>
+                                        <h2 class="bill-head" id="total">₹5725</h2> <small class="bill-date" id="total-label">Price includes all taxes</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 p-0 box">
+                            <div class="card rounded-0 border-0 card2" id="paypage">
+                                <div class="form-card">
+                                    <h2 id="heading2" class="text-danger">Payment Method</h2>
+                                    <div class="radio-group">
+                                        <div class='radio' data-value="credit"><img src="images/visa2.png" width="200px" height="60px"></div>
+                                        <div class='radio' data-value="paypal"><img src="images/paypal.webp" width="200px" height="60px"></div> <br>
+                                    </div> <label class="pay">Name on Card</label> <input type="text" name="holdername" placeholder="Name">
+                                    <div class="row">
+                                        <div class="col-8 col-md-6"> <label class="pay">Card Number</label> <input type="text" name="cardno" id="cr_no" placeholder="0000-0000-0000-0000" minlength="19" maxlength="19"> </div>
+                                        <div class="col-4 col-md-6"> <label class="pay">CVV</label> <input type="password" name="cvcpwd" placeholder="&#9679;&#9679;&#9679;" class="placeicon" minlength="3" maxlength="3"> </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"> <label class="pay">Expiration Date</label> </div>
+                                        <div class="col-md-12"> <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5"> </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6"> <input type="submit" value="MAKE A PAYMENT " class="btn btn-info placeicon"
+                                            onclick="window.location.href='index.html'"> </div>
+                                        <!-- <script>
+                                            alert('Booking Successful. Flight Details and bill have been sent to registered Email-Id');
+                                            onclick="alert('Payment Processing... \nPlease wait. Do not refresh.')"
+                                        </script> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

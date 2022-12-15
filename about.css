@@ -1,0 +1,36 @@
+html{
+   scroll-behavior: smooth;
+}
+.navbt{
+    color: black;
+ }
+  .navigation{
+    position:relative;
+    left: 620px;
+ }
+ .searchbar{
+    position: relative;
+    left: 200px;
+ } 
+ .khatola{
+    color: black;
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ .about{
+    text-align: left;
+    padding: 2%;
+ }
+ .pics{
+    text-align: center;
+    padding: 2%;
+ }
+ .mdi {
+   font-size: 50px
+}
+
+.padding {
+   padding: 0.5rem !important
+}
+ 

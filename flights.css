@@ -1,0 +1,121 @@
+html{
+    scroll-behavior: smooth;
+ }
+.navbt{
+    color: black;
+ }
+  .navigation{
+    position:relative;
+    left: 620px;
+ }
+ .searchbar{
+    position: relative;
+    left: 200px;
+ } 
+ .khatola{
+    color: black;
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ 
+.section2{
+    padding: 10px;
+    color: black;
+    background-color: #ffd700;
+    height: 110%;
+    width: 25%;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    z-index: -1;
+
+}
+.row1{
+    padding: 20px 10px;
+}
+.title-btn{
+    width: 200px;
+    height: 60px;
+}
+.txt-sec1{
+    color: white;
+    background-color: black;
+    padding: 1%;
+    position: absolute;
+    border-radius: 20px;
+    font-weight: bold;
+    top: 220px;
+    left: 500px;
+    z-index: 20;
+}
+.search-btn{
+    height: 40px;
+    background-color: white;
+    width: 150px;
+}
+.button-top{
+    color: #ff6347;
+}
+.time{
+    text-align: right;
+}
+.section3{
+    width: 75%;
+    height: 120px;
+    left: 380px;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+}
+.section3{
+    width: 850px;
+    height: 120px;
+    position: absolute;
+    left: 380px;
+    top: 350px;
+    text-align: center;
+    background-color: white;
+}
+.section4{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 140px;
+}
+.section5{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 290px;
+}
+.section6{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 440px;
+}
+.indigo{
+    height: 100px;
+    width: 150px;
+    object-fit: fill;
+}
+.slider-img{
+    width: 200px;
+    height: 80px;
+    text-align: left;
+}
+.link{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.link :hover{
+    text-decoration: underline;
+}
+.info{
+    margin-top: 750px;
+}
+.title-head{
+    margin: 10px ;
+}
